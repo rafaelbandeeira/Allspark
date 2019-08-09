@@ -1,6 +1,6 @@
 # Allspark
-Este script de teste foi feito com muito amor e carinho. O repositório possui todos os arquivos necessários 
-para a execução do teste.
+Estes códigos foram feitos com muito amor e carinho. O repositório possui todos os arquivos necessários 
+para a reprodução do script.
 
 Este projeto foi feito com a instalação de algumas dependências e configurações:
 
