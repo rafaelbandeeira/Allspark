@@ -1,0 +1,25 @@
+{
+  "name": "allspark",
+  "version": "1.0.0",
+  "description": "configuration of the allspark project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Esukanoiru",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.4.1",
+    "cypress-cucumber-preprocessor": "^1.13.0",
+    "cypress-xpath": "^1.4.0"
+  },
+  "dependencies": {
+    "cosmiconfig": "^5.2.1"
+  },
+  
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+  
+}
+
