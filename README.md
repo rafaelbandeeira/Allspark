@@ -70,6 +70,6 @@ CYPRESS COMMANDS:
 	
    ponha no arquivo cypress/support/index.js
    
-   	require('cypress-commands');
+   	require('cypress-commands')
     
 
