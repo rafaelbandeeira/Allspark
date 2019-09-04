@@ -11,25 +11,25 @@ NODE.JS:
 
 CYPRESS:
 
-   inicialize com:
+   inicialize com
    	
 	npm init
 	
-   utilize o comando: 
+   depois, utilize o comando
    
    	npm install cypress --save-dev.
    
-   abra o arquivo 'open cypress.bat' disponível neste repositório e aceite a configuração inicial. // ou inicie-o na pasta raíz usando: 
+   abra o arquivo 'open cypress.bat' disponível neste repositório e aceite a configuração inicial // ou inicie-o na pasta raíz usando 
    
    	npx cypress open
 
 CUCUMBER:
 
-   utilize o comando: 
+   utilize o comando 
    
    	npm install cypress-cucumber-preprocessor --save-dev
    
-   abra o arquivo cypress/plugins/index.js e adicione o código:
+   em seguida, abra o arquivo cypress/plugins/index.js e adicione o código
     
     const cucumber = require('cypress-cucumber-preprocessor').default
 
@@ -39,11 +39,11 @@ CUCUMBER:
 
 COSMICONFIG:
 
-   utilize o comando: 
+   utilize o comando
    
    	npm install cosmiconfig.
 	
-   abra o arquivo package.json e adicione:
+   abra o arquivo package.json e adicione
   
     "cypress-cucumber-preprocessor": {
       "nonGlobalStepDefinitions": true
@@ -54,12 +54,22 @@ COSMICONFIG:
 
 XPATH:
 
-   utilize o comando: 
+   utilize o comando
    
    	npm install -D cypress-xpath
 	
-   abra o arquivo cypress/support/index.js e adicione o código:
+   abra o arquivo cypress/support/index.js e adicione o código
   
     require('cypress-xpath')
+    
+CYPRESS COMMANDS:
+
+   inicie o comando
+   
+   	npm install cypress-commands
+	
+   ponha no arquivo cypress/support/index.js
+   
+   	require('cypress-commands');
     
 
