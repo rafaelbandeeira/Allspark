@@ -2,7 +2,8 @@
 Estes códigos foram feitos com muito amor e carinho. O repositório possui todos os arquivos necessários 
 para a reprodução do script.
 
-Estes scripts foram feitos com a instalação de algumas dependências e configurações na pasta raíz do projeto.
+Estes scripts foram feitos com a instalação de algumas dependências.
+Os códigos e configurações devem acontecer na pasta raíz do projeto, utilizando o cmd/powershell com permissão de administrador.
 
 NODE.JS:
 
@@ -10,15 +11,23 @@ NODE.JS:
 
 CYPRESS:
 
-   inicialize com $npm init
+   inicialize com:
+   	
+	npm init
 	
-   utilize o comando $npm install cypress --save-dev.
+   utilize o comando: 
    
-   abra o arquivo 'open cypress.bat' disponível neste repositório e aceite a configuração inicial.
+   	npm install cypress --save-dev.
+   
+   abra o arquivo 'open cypress.bat' disponível neste repositório e aceite a configuração inicial. // ou inicie-o na pasta raíz usando: 
+   
+   	npx cypress open
 
 CUCUMBER:
 
-   utilize o comando $npm install cypress-cucumber-preprocessor --save-dev.
+   utilize o comando: 
+   
+   	npm install cypress-cucumber-preprocessor --save-dev
    
    abra o arquivo cypress/plugins/index.js e adicione o código:
     
@@ -27,22 +36,30 @@ CUCUMBER:
     module.exports = (on, config) => {
       on('file:preprocessor', cucumber())
     }
-    
-XPATH:
 
-   utilize o comando $npm install -D cypress-xpath.
-	
-   abra o arquivo cypress/support/index.js e adicione o código:
-  
-    require('cypress-xpath')
-    
 COSMICONFIG:
 
-   utilize o comando $npm install cosmiconfig.
+   utilize o comando: 
+   
+   	npm install cosmiconfig.
 	
    abra o arquivo package.json e adicione:
   
     "cypress-cucumber-preprocessor": {
       "nonGlobalStepDefinitions": true
     }
- 
+
+*ponha 'false' para utilizar o método tradicional do Cucumber
+
+
+XPATH:
+
+   utilize o comando: 
+   
+   	npm install -D cypress-xpath
+	
+   abra o arquivo cypress/support/index.js e adicione o código:
+  
+    require('cypress-xpath')
+    
+
